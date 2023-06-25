@@ -9,6 +9,7 @@ import authRoutes from './routes/auth.js';
 import usersRoutes from './routes/users.js';
 import dashboardRoutes from './routes/dashboard.js';
 import messagesRoutes from './routes/messages.js';
+import roomsRoutes from './routes/rooms.js';
 import { Server } from 'socket.io';
 import { createServer } from 'http';
 
@@ -65,6 +66,7 @@ app.use('/auth', authRoutes);
 app.use('/users', usersRoutes);
 app.use('/messages', messagesRoutes);
 app.use('/dashboard', dashboardRoutes);
+app.use('/rooms', roomsRoutes);
 
 /** MONGOOSE CONFIGURATION */
 const PORT = process.env.PORT || 3001;

@@ -85,7 +85,7 @@ export const addContact = async (req, res) => {
     return res.status(200).json({
       ok: true,
       message: 'contact added successfully',
-      data: userInfo
+      data: userSearched
     });
   } catch (error) {
     console.log(error);

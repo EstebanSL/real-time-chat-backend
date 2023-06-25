@@ -2,9 +2,9 @@ import mongoose, { Schema } from 'mongoose';
 
 const roomSchema = new mongoose.Schema(
   {
-    created: {
+    name: {
       required: true,
-      type: Date,
+      type: String,
     },
     owner: { 
       required: true,
@@ -25,4 +25,4 @@ const roomSchema = new mongoose.Schema(
 
 const Room = mongoose.model('Room', roomSchema);
 
-export default User;
+export default Room;
